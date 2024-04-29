@@ -1,0 +1,101 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 50px;
+  background-color: #dff9fb;
+}
+
+.canvasWrapper {
+  display: flex;
+}
+.canvas {
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.5);
+}
+
+.colorPalette {
+  display: flex;
+  justify-content: center;
+  padding-top: 15px;
+}
+
+.colorDiv {
+  width: 40px;
+  height: 40px;
+  margin: 0 5px;
+  border-radius: 50%;
+  border: 2px solid transparent;
+}
+
+.colorDiv.selected {
+  border-color: blue;
+  box-shadow: 1px 1px 3px blue;
+}
+
+.toolBox {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  padding: 10px;
+  background-color: #95afc0;
+  border-radius: 10px;
+  position: relative;
+  right: 10px;
+  box-shadow: 1px 1px 3px black;
+}
+
+.toolDiv {
+  width: 40px;
+  height: 40px;
+  margin: 5px 5px;
+  border: 2px solid transparent;
+  border-radius: 10px;
+  box-shadow: 1px 1px 3px black;
+  background-color: white;
+}
+
+.toolDiv.selected > svg > path {
+  fill: blue;
+}
+
+#black {
+  background-color: black;
+}
+
+#red {
+  background-color: red;
+}
+
+#blue {
+  background-color: blue;
+}
+
+#yellow {
+  background-color: yellow;
+}
+
+#green {
+  background-color: green;
+}
+
+#white {
+  background-color: white;
+}
+
+#erase,
+#download {
+  background-color: white;
+}
+
+#download :active path {
+  fill: blue;
+}
